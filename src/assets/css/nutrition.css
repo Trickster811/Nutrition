@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*!
+* Platform Name: Nutrition
+* Author: Nedaouka Joachim
+* Version: 1.0.0
+* Updated: 10.19.2023
+**/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "SamsungOne";
+    src: url("../fonts/SamsungOne-400.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SamsungOneB";
+    src: url("../fonts/SamsungOne-700.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/* Custom Scollbar */
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        width: 10px;
+        height: 20px;
+    }
+
+    .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb {
+        background: #94a3b8;
+        border-radius: 100vh;
+        border: 3px solid #fff;
+    }
+
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+    }
+}
